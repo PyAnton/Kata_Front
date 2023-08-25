@@ -11,8 +11,20 @@ body {
     height: 200px;
     margin-top: 250px;
 }
-.form-login input,
-.form-login button {
+.form-login input{
     width: 100%;
+    height: 33px;
     margin-bottom: 15px;
+    border-radius: 6px;
+}
+.form-login input:focus{
+    /* border: 1px solid #fff; */
+    box-shadow:0 0 15px #585ad3;
+    border: none;
+    outline:none;
+}
+.button-sign {
+ background-color: rgb(4, 134, 255);
+ border-radius: 6px;
+ color: #ffffff;
 }
