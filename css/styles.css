@@ -4,35 +4,44 @@ body {
 }
 
 .header {
-    height: 45px;
-    background-color: #333;
-    color: white;
-    text-align: center;
-    line-height: 35px;
+  display: flex;
+  height: 55px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
+.header-left {
+  padding-left: 30px;
+  display: flex;
+}
+.header-right {
+  padding-right: 30px;
+  display: flex;
+}
 .main {
-    display: flex;
+  display: flex;
 }
 
 .sidebar {
-    width: 15%;
-    min-width: 200px;
-    height: auto;
-    min-height: 100vh;
-    background-color: #bdbdbdd2;
-    float: left;
+  width: 15%;
+  min-width: 200px;
+  height: auto;
+  min-height: 100vh;
+  background-color: #bdbdbdd2;
+  float: left;
 }
 
 .sidebar a {
-    display: block;
-    padding-left: 30px;
-    padding-top: 15px;
-    text-decoration: none;
-    color: #686868;
+  display: block;
+  padding-left: 30px;
+  padding-top: 15px;
+  text-decoration: none;
+  color: #686868;
 }
 .sidebar a:hover {
-    color: #000000;
+  color: #000000;
 }
 
 .main-content {
@@ -55,62 +64,81 @@ body {
 
 
 
-  .tabs {
-    font-size: 0;
-    width: 100%;
-    /* max-width: 350px; */
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-  }
+.tabs {
+  font-size: 0;
+  width: 100%;
+  /* max-width: 350px; */
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
 
-  .tabs>input[type="radio"] {
-    display: none;
-  }
+.tabs>input[type="radio"] {
+  display: none;
+}
 
-  .tabs>div {
-    /* скрыть контент по умолчанию */
-    display: none;
-    border: 1px solid #181616;
-    padding: 10px 15px;
-    font-size: 16px;
-    border-radius: 6px;
-  }
+.tabs>div {
+  /* скрыть контент по умолчанию */
+  display: none;
+  border: 1px solid #181616;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 6px;
+}
 
-  /* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
-  #tab-btn-1:checked~#content-1,
-  #tab-btn-2:checked~#content-2{
-    display: block;
-  }
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#tab-btn-1:checked~#content-1,
+#tab-btn-2:checked~#content-2{
+  display: block;
+}
 
-  .tabs>label {
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-    user-select: none;
-    padding: 6px 16px;
-    font-size: 16px;
-    line-height: 1.5;
-    transition: color 0.15s ease-in-out, background-color 0.55s ease-in-out;
-    cursor: pointer;
-    position: relative;
-    top: 1px;
-    border-radius: 4px;
-  }
+.tabs>label {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  padding: 6px 16px;
+  font-size: 16px;
+  line-height: 1.5;
+  transition: color 0.15s ease-in-out, background-color 0.55s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  top: 1px;
+  border-radius: 4px;
+}
 
-  .tabs>label:not(:first-of-type) {
-    border-left: none;
-    
-  }
+.tabs>label:not(:first-of-type) {
+  border-left: none;
+  
+}
 
-  .tabs>input[type="radio"]:checked+label {
-    background-color: #1f1919b9;
-    color: rgb(247, 247, 247);
-  }
+.tabs>input[type="radio"]:checked+label {
+  background-color: #1f1919b9;
+  color: rgb(247, 247, 247);
+}
 
-  .new-user-form {
-    background-color: #181616;
-    width: 300px; /* Ширина формы (замените на нужное значение) */
-    padding: 20px;
-    border-radius: 10px;
-  }
+.new-user-form {
+  width: 350px; /* Ширина формы (замените на нужное значение) */
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.new-user-form input,
+.new-user-form select {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.button-submit {
+  background-color: #198622cb;
+  height: 45px;
+  border-radius: 8px;
+  color: rgb(243, 243, 243);
+}
+.button-edit {
+
+}
+.button-delete {
+
+}
