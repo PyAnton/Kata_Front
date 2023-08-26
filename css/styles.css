@@ -166,8 +166,20 @@ body {
   border-radius: 4px;
   color: rgb(243, 243, 243);
 }
-
-
+.button-logout {
+  width: 58px; 
+  height: 38px; 
+  background-color: #ff110000;
+  border: 1px solid transparent;
+  color: rgb(243, 243, 243);
+}
+.button-logout:hover {
+  color: rgb(91, 99, 212);
+}
+.button-logout:active {
+  background-color: #ff110000;
+  border: none;
+}
 /* Модальное окно 1 */
 .modal-body {
   display: block;
