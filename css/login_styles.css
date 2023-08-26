@@ -15,6 +15,7 @@ body {
     width: 100%;
     height: 33px;
     margin-bottom: 15px;
+    border: 1px solid #585ad3;
     border-radius: 6px;
 }
 .form-login input:focus{
@@ -25,6 +26,13 @@ body {
 }
 .button-sign {
  background-color: rgb(4, 134, 255);
+ border: 1px solid transparent;
  border-radius: 6px;
  color: #ffffff;
 }
+  /* width: 310px;
+  height: 38px;
+  background-color: #21a80f;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: rgb(243, 243, 243); */
