@@ -34,14 +34,20 @@ body {
 }
 
 .sidebar a {
-  display: block;
-  padding-left: 30px;
-  padding-top: 15px;
+  display: inline-block; /* Превращает ссылку в блочно-строчный элемент */
+  text-align: start;    /* Выравнивает текст по центру внутри блока */
+  width: 100%;           /* Может быть необходимо задать ширину для полного центрирования */
+  padding: 12px;
+  padding-left: 25px;
   text-decoration: none;
-  color: #686868;
+  color: #505050;
+  font-size: 18px;
 }
 .sidebar a:hover {
   color: #000000;
+}
+.sidebar-link-check {
+  background-color: #147fd6;
 }
 
 .main-content {
